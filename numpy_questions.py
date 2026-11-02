@@ -47,12 +47,12 @@ def max_index(X):
     if X.ndim != 2:
         raise ValueError("Not a 2D array")
 
-    i, j = np.unravel_index(np.argmax(X), X.shape) #find the position of the biggest value
+    i, j = np.unravel_index(np.argmax(X), X.shape)
 
     return i, j
 
 
-def wallis_product(n_terms): 
+def wallis_product(n_terms):
     """Implement the Wallis product to compute an approximation of pi.
 
     See:
